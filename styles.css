@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+}
+
+body {
+    font-family: Arial;
+    text-align: center;
+    max-height: 100vh;
+    max-width: 100%;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+div {
+    height: 100vh;
+    width: 100%;
+}
+
+.bg {
+    background-image: url(temp.jpg);
+    background-size: cover;
+    width: 120%;
+    height: 125vh;
+    position: fixed;
+    z-index: 0;
+    top: -15vh;
+    left: -10%;
+    margin: auto;
+}
+
+.fog, .fog_f1, .fog0, .fog1, .fog2 {
+    width: 150%;
+    height: 150vh;
+    background-image: url(fog.png);
+    background-repeat: repeat-x;
+    position: fixed;
+    z-index: 1;
+    top: 40%;
+    left: -25%;
+    margin: auto;
+}
+
+.fog {
+    width: 9.5%;
+    height: 5vh;
+    background-size: 100%;
+    top: 50%;
+    left: 49.5%;
+    transform: translateX(-49.5%);
+    opacity: 0.3;
+}
+
+.fog_f1 {
+    background-image: url(fog1.png);
+    width: 25%;
+    height: 10vh;
+    background-size: 120%;
+    top: 70%;
+    left: 49.5%;
+    transform: translateX(-49.5%);
+    opacity: 0.3;
+}
+
+.fog1 {
+    background-image: url(fog1.png);
+    background-size: 50%;
+    top: 80%;
+}
+
+.fog2 {
+    background-image: url(fog2.png);
+    background-size: 200%;
+    top: 0;
+}
